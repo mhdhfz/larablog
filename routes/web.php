@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// default route
 Route::get('/', function () {
     return view('welcome');
+});
+
+// return string
+Route::get('/hello', function() {
+    return 'Hello World';
+});
+
+// return json - great for api
+Route::get('/json', function(){
+    return ['name' => 'laravel'];
 });
