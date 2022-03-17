@@ -8,41 +8,10 @@
     <title>My Blog</title>
 </head>
 <body>
+    <?php foreach ($posts as $post) : ?>
     <article>
-        <h1><a href="/posts/my-first-post">My First Post</a></h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quia quasi 
-            porro, expedita illum recusandae consequatur modi architecto tenetur velit 
-            pariatur officiis veritatis rem nemo minima, impedit totam nesciunt, 
-            quas corporis. Ipsum illum saepe laboriosam aspernatur dolore quisquam quas. 
-            Ex aspernatur voluptas fuga omnis facere, tenetur modi. Nostrum, sed alias unde 
-            voluptatum tempora ullam quos, tenetur eveniet, culpa modi et libero rem 
-            repellendus temporibus! Vero totam inventore ut? Praesentium?
-        </p>
+        <?= $post; ?>
     </article>
-    <article>
-        <h1><a href="/posts/my-second-post">My Second Post</a></h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quia quasi 
-            porro, expedita illum recusandae consequatur modi architecto tenetur velit 
-            pariatur officiis veritatis rem nemo minima, impedit totam nesciunt, 
-            quas corporis. Ipsum illum saepe laboriosam aspernatur dolore quisquam quas. 
-            Ex aspernatur voluptas fuga omnis facere, tenetur modi. Nostrum, sed alias unde 
-            voluptatum tempora ullam quos, tenetur eveniet, culpa modi et libero rem 
-            repellendus temporibus! Vero totam inventore ut? Praesentium?
-        </p>
-    </article>
-    <article>
-        <h1><a href="/posts/my-third-post">My Third Post</a></h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea quia quasi 
-            porro, expedita illum recusandae consequatur modi architecto tenetur velit 
-            pariatur officiis veritatis rem nemo minima, impedit totam nesciunt, 
-            quas corporis. Ipsum illum saepe laboriosam aspernatur dolore quisquam quas. 
-            Ex aspernatur voluptas fuga omnis facere, tenetur modi. Nostrum, sed alias unde 
-            voluptatum tempora ullam quos, tenetur eveniet, culpa modi et libero rem 
-            repellendus temporibus! Vero totam inventore ut? Praesentium?
-        </p>
-    </article>
+    <?php endforeach; ?>
 </body>
 </html>
