@@ -54,8 +54,6 @@
                     <x-post-comment />
                 </section>
             </article>
-
-
         </main>
     </section>
 </x-layout>
