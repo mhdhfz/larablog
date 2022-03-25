@@ -18,6 +18,7 @@ Route::post('register', [RegisterController::class, 'store'])->middleware('guest
 Route::post('newsletter', NewsletterController::class);
 
 Route::get('admins/posts/create', [PostController::class, 'create'])->middleware('admin');
+Route::post('admins/posts', [PostController::class, 'store'])->middleware('admin');
 
 Route::get('login', [SessionController::class, 'create'])->middleware('guest');
 Route::post('login', [SessionController::class, 'store'])->middleware('guest');
